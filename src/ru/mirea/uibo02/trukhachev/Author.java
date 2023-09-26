@@ -1,45 +1,40 @@
 package ru.mirea.uibo02.trukhachev;
 import java.util.Scanner;
-public class Author
-{
+public class Author {
     private String name;
     private String email;
     private char gender;
-    public Author(String name, String email, char gender)
-    {
+
+    public Author(String name, String email, char gender) {
         this.name = name;
         this.email = email;
         this.gender = gender;
 
     }
-    public String getName()
-    {
+
+    public String getName() {
         return name;
     }
-    public String getEmail()
-    {
+
+    public String getEmail() {
         return email;
     }
-    public void setEmail(String email)
-    {
+
+    public void setEmail(String email) {
         this.email = email;
     }
-    public char getGender()
-    {
+
+    public char getGender() {
         return gender;
     }
-    public String tostring()
-    {
+
+    public String tostring() {
         String genderString;
-        if (gender == 'M')
-        {
+        if (gender == 'M') {
             genderString = "(m)";
-        } else if (gender == 'F')
-        {
+        } else if (gender == 'F') {
             genderString = "(f)";
-        }
-        else
-        {
+        } else {
             genderString = "(u)";
         }
         return name + " " + genderString + " at " + email;
